@@ -39,10 +39,10 @@
   const renderedList = `<ul>${renderNestedList(nestedFolders)}</ul>`;
 </script>
 
-<div class="container">
+<div class="container navbar">
 	<div class="row">
 		<div class="col-md-12">
-			<h1>Pages</h1>
+			<h2>Pages</h2>
 			{@html renderedList}
 		</div>
 	</div>

@@ -1,34 +1,95 @@
 /* style.css */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+@font-face {
+  font-family: 'sary_soft_semiboldregular';
+  src: url('/font/sary-soft.soft-semibold-webfont.woff2') format('woff2'),
+       url('/font/sary-soft.soft-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'inter-semibold';
+	src: url('/font/Inter-SemiBold.woff2');
+}
+
+html {
+	/*font-family: 'sary_soft_semiboldregular';*/
+	font-family: 'inter-semibold';
+}
+
 body {
 	margin: 0;
+	padding: 0;
 	background: #eee;
-	color: #333;
-	font-family: sans-serif;
+	color: #fff;
+	background-color: #16181c;
 }
 
 main {
-	padding: 1rem;
-	margin: 2rem auto;
-	max-width: 40rem;
+	padding: 2rem;
+	margin: 2rem;
+	background-color: #26292f;
+	border-radius: 0.5rem;
+	float: left;
+	overflow: hidden;
 }
 
 .column {
-	float: left;
-	padding: 10px;
 	height: auto;
-	display: table-cell;
+	padding: 0;
+	flex-grow: 0;
+	height: auto;
+	margin: 2rem;
+	background-color: #26292f;
+	border-radius: 0.5rem;
+	overflow:visible;
+  }
+
+  .flex_grow {
+	flex-grow: 1;
   }
 
   .navbar {
-	border-right: black solid 1px;
+	float: left;
+	padding: 2rem;
+  }
+
+  ul {
+	padding-left: 10px;
   }
 
   .container {
-	display: table;
+	display: flex;
   }
   
   .row:after {
 	content: "";
 	display: table;
 	clear: both;
+  }
+
+  .not-selectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+
+  a {
+	color: #afb9c4;
+	text-decoration: none;
+  }
+
+  a:hover {
+	color: #fff;
+  }
+
+  .invert {
+	filter: invert(1);
   }

@@ -1,7 +1,9 @@
 <!-- Footer.svelte -->
 <footer>
 	<a href="/">Home</a>
-
+	<div class="footer">
+		<p>Website by Jonas_Jones 2021 - 2023</p>
+	</div>
 	<nav>
 		<ul>
 			<li>
@@ -17,10 +19,14 @@
 <style>
 	footer {
 		padding: 1rem;
-		background: lightskyblue;
+		margin: 2rem;
+		margin-bottom: 0;
+		margin-top: 0;
+		background: #16181c;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		border-radius: 0.5rem;
 	}
 
 	ul {
@@ -33,5 +39,12 @@
 	a {
 		text-decoration: none;
 		color: inherit;
+	}
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
 	}
 </style>

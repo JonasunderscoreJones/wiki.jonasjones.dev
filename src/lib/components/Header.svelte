@@ -1,7 +1,10 @@
 <!-- Header.svelte -->
 <header>
 	<div class="header-title">
-		<a href="/"><img src="/favicon.png" alt="logo" width="50" height="50"><h1 style="">wiki.jonasjones.dev</h1></a>
+		<a href="/"
+			><img src="/favicon.png" alt="logo" width="50" height="50" />
+			<h1 style="">wiki.jonasjones.dev</h1></a
+		>
 	</div>
 	<nav>
 		<ul>
@@ -45,10 +48,10 @@
 	}
 
 	h1 {
-		font-size:35px;
-		padding:0;
-		margin:0;
-		margin-left:20px;
+		font-size: 35px;
+		padding: 0;
+		margin: 0;
+		margin-left: 20px;
 		float: left;
 	}
 

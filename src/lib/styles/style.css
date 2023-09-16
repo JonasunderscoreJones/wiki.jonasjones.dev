@@ -1,14 +1,12 @@
 /* style.css */
-
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 @font-face {
-  font-family: 'sary_soft_semiboldregular';
-  src: url('/font/sary-soft.soft-semibold-webfont.woff2') format('woff2'),
-       url('/font/sary-soft.soft-semibold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
+	font-family: 'sary_soft_semiboldregular';
+	src: url('/font/sary-soft.soft-semibold-webfont.woff2') format('woff2'),
+		url('/font/sary-soft.soft-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 :root {
@@ -64,46 +62,46 @@ main {
 	margin: 2rem;
 	background-color: var(--container-background-color);
 	border-radius: 0.5rem;
-	overflow:visible;
-  }
+	overflow: visible;
+}
 
-  .flex_grow {
+.flex_grow {
 	flex-grow: 1;
-  }
+}
 
-  .navbar {
+.navbar {
 	float: left;
 	padding: 2rem;
-  }
+}
 
-  ul {
+ul {
 	padding-left: 10px;
-  }
+}
 
-  .container {
+.container {
 	display: flex;
-  }
-  
-  .row:after {
+}
+
+.row:after {
 	content: "";
 	display: table;
 	clear: both;
-  }
+}
 
-  .not-selectable {
+.not-selectable {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-  }
+}
 
-  a {
+a {
 	color: var(--link-text-color);
 	text-decoration: none;
-  }
+}
 
-  a:hover {
+a:hover {
 	color: var(--text-color);
-  }
+}

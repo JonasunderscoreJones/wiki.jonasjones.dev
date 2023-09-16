@@ -16,13 +16,17 @@
 	</nav>
 </footer>
 
+<script>
+	import '$lib/styles/style.css';
+</script>
+
 <style>
 	footer {
 		padding: 1rem;
 		margin: 2rem;
 		margin-bottom: 0;
 		margin-top: 0;
-		background: #16181c;
+		background: var(--container-background-color);
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;

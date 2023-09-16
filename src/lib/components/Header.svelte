@@ -1,24 +1,19 @@
 <!-- Header.svelte -->
-<body style="background-color: {$isDarkMode ? '#fff' : '#16181c'};padding:0">
-	<header>
-		<div class="header-title">
-			<a href="/"><img src="/favicon.png" alt="logo" width="50" height="50"><h1 style="">wiki.jonasjones.dev</h1></a>
-		</div>
-		<nav>
-			<ul>
-				<li>
-					<a href="/about">About</a>
-				</li>
-				<li>
-					<a href="/contact">Contact</a>
-				</li>
-				<li>
-					<DarkModeSwitcher />
-				</li>
-			</ul>
-		</nav>
-	</header>
-</body>
+<header>
+	<div class="header-title">
+		<a href="/"><img src="/favicon.png" alt="logo" width="50" height="50"><h1 style="">wiki.jonasjones.dev</h1></a>
+	</div>
+	<nav>
+		<ul>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/contact">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</header>
 
 <style>
 	header {
@@ -66,25 +61,4 @@
 		float: left;
 		clear: both;
 	}
-
-	button#dark-mode-toggle {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-	}
-
-	button#dark-mode-toggle img {
-		width: 30px;
-		height: 30px;
-	}
 </style>
-<script>
-	import DarkModeSwitcher from '$lib/components/DarkModeSwitcher.svelte';
-	import { isDarkMode } from '$lib/stores/darkModeStore.js';
-
-	function toggleDarkMode() {
-	$isDarkMode = !$isDarkMode;
-	document.body.classList.toggle("dark-mode", $isDarkMode);
-	}
-
-</script>

@@ -11,6 +11,22 @@
 
 }
 
+:root {
+	--background-color: #16181c;
+	--container-background-color: #26292f;
+	--text-color: #fff;
+	--link-text-color: #afb9c4;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background-color: #eee;
+		--container-background-color: #d9d6d0;
+		--text-color: #000;
+		--link-text-color: #50463b;
+	}
+}
+
 @font-face {
 	font-family: 'inter-semibold';
 	src: url('/font/Inter-SemiBold.woff2');
@@ -19,20 +35,21 @@
 html {
 	/*font-family: 'sary_soft_semiboldregular';*/
 	font-family: 'inter-semibold';
+	background-color: var(--background-color);
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	background: #eee;
-	color: #fff;
-	background-color: #16181c;
+	color: var(--text-color);
+	background-color: var(--background-color);
 }
 
 main {
 	padding: 2rem;
 	margin: 2rem;
-	background-color: #26292f;
+	background-color: var(--container-background-color);
 	border-radius: 0.5rem;
 	float: left;
 	overflow: hidden;
@@ -44,7 +61,7 @@ main {
 	flex-grow: 0;
 	height: auto;
 	margin: 2rem;
-	background-color: #26292f;
+	background-color: var(--container-background-color);
 	border-radius: 0.5rem;
 	overflow:visible;
   }
@@ -82,14 +99,10 @@ main {
   }
 
   a {
-	color: #afb9c4;
+	color: var(--link-text-color);
 	text-decoration: none;
   }
 
   a:hover {
-	color: #fff;
-  }
-
-  .invert {
-	filter: invert(1);
+	color: var(--text-color);
   }

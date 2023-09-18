@@ -1,3 +1,7 @@
+<script>
+	import "$lib/styles/style.css";
+</script>
+
 <!-- Footer.svelte -->
 <footer>
 	<a href="/">Home</a>
@@ -15,10 +19,6 @@
 		</ul>
 	</nav>
 </footer>
-
-<script>
-	import '$lib/styles/style.css';
-</script>
 
 <style>
 	footer {

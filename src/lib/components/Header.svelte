@@ -9,10 +9,7 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/contact">Contact</a>
+				<a href="https://jonasjones.dev/"><img style="padding-top: 7px;" src="/homepage.png" height="30px" alt="Homepage"></a>
 			</li>
 		</ul>
 	</nav>

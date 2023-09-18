@@ -11,6 +11,9 @@
 	<nav>
 		<ul>
 			<li>
+				<a href="https://jonasjones.dev/">Homepage</a>
+			</li>
+			<li>
 				<a href="/about">About</a>
 			</li>
 			<li>

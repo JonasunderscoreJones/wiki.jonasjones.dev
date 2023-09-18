@@ -73,8 +73,9 @@ main {
 .navbar {
 	float: left;
 	padding: 2rem;
-	min-width: 200px;
+	min-width: 300px;
 	margin-right: 2rem;
+	font-size: 1.2rem;
 }
 
 ul {

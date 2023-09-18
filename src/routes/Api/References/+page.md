@@ -1,4 +1,5 @@
 # References
 ---
 
-Find the publically available API calls in the sublinks.
+The following are the cureently publically available API calls:
+

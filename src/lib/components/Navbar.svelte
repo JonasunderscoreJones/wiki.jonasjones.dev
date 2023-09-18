@@ -3,6 +3,7 @@
 
 	let data = import.meta.glob("/src/routes/**/+page.md");
 	let paths = data;
+	export let items;
 
 	/**
 	 * @param {Record<string, () => Promise<unknown>>} paths
@@ -37,24 +38,52 @@
 	}
 
 	const nestedFolders = buildHierarchy(paths);
+	console.log(nestedFolders)
 
 	// Helper function to recursively render the nested list
 	/**
 	 * @param {{ [x: string]: any; }} node
 	 */
-	function renderNestedList(node, prefix = "") {
-		return Object.keys(node)
-			.map((key) => {
-				const fullPath = `${prefix}/${key}`;
-				return `<li><a href="${fullPath}">${key}</a><ul>${renderNestedList(
-					node[key],
-					fullPath
-				)}</ul></li>`;
-			})
-			.join("");
-	}
+	// function renderNestedList(node, prefix = "") {
+	// 	return Object.keys(node)
+	// 		.map((key) => {
+	// 			const fullPath = `${prefix}/${key}`;
+	// 			return `<li><a href="${fullPath}">${key}</a><ul>${renderNestedList(
+	// 				node[key],
+	// 				fullPath
+	// 			)}</ul></li>`;
+	// 		})
+	// 		.join("");
+	// }
 
-	const renderedList = `<ul>${renderNestedList(nestedFolders)}</ul>`;
+	function createHtmlList(obj, parentPath = '') {
+    let html = '';
+
+    for (const key in obj) {
+      const currentPath = parentPath ? `${parentPath}/${key}` : key;
+
+      if (typeof obj[key] === 'object' && Object.keys(obj[key]).length > 0) {
+        // If the value is an object and not empty, create a nested div
+        html += `
+		<details>
+          	<summary><a href="/${currentPath}">${key}</a></summary>
+            <ul>
+              ${createHtmlList(obj[key], currentPath)}
+            </ul>
+          </details>
+        `;
+      } else {
+        // If the value is not an object or empty, create a clickable list item
+        html += `<li><a href="/${currentPath}">${key}</a></li>`;
+      }
+    }
+
+    return html;
+  }
+
+	//const renderedList = `<ul>${renderNestedList(nestedFolders)}</ul>`;
+	const renderedList = createHtmlList(nestedFolders);
+
 </script>
 
 <div class="container navbar">

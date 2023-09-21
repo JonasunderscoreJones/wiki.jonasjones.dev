@@ -27,7 +27,7 @@ This API allows you to gather the most surface-level information about your serv
 
 The supported API calls are
 
-### Server MOTD
+## Server MOTD
 - Returns the Server MOTD
 ```
 http://localhost:8080/api/v1/motd
@@ -37,7 +37,7 @@ http://localhost:8080/api/v1/motd
 ["A Minecraft Server"]
 ```
 
-### Server IP  address
+## Server IP  address
 - Returns the Server's IP address, if set in the server's `server.properties` file, or else returns an empty string
 ```
 http://localhost:8080/api/v1/serverip
@@ -47,7 +47,7 @@ http://localhost:8080/api/v1/serverip
 [""]
 ```
 
-### Server Port
+## Server Port
 - Returns the Server's port
 ```
 http://localhost:8080/api/v1/serverport
@@ -57,7 +57,7 @@ http://localhost:8080/api/v1/serverport
 ["25565"]
 ```
 
-### Server Name
+## Server Name
 - Returns the Server's Name, if set in the server's `server.properties` file, or else returns an empty string
 ```
 http://localhost:8080/api/v1/servername
@@ -67,7 +67,7 @@ http://localhost:8080/api/v1/servername
 ["Server"]
 ```
 
-### Server MC Version
+## Server MC Version
 - Returns the Server's Minecraft Version
 ```
 http://localhost:8080/api/v1/serverversion
@@ -77,7 +77,7 @@ http://localhost:8080/api/v1/serverversion
 ["1.20.1"]
 ```
 
-### Fabric/Quilt Loader Version
+## Fabric/Quilt Loader Version
 - Returns the Mod-loader version
 ```
 http://localhost:8080/api/v1/loaderversion
@@ -87,7 +87,7 @@ http://localhost:8080/api/v1/loaderversion
 ["0.14.22"]
 ```
 
-### Server Player Count
+## Server Player Count
 - Returns the current player count.
 ```
 http://localhost:8080/api/v1/currentplayercount
@@ -97,7 +97,7 @@ http://localhost:8080/api/v1/currentplayercount
 ["0"]
 ```
 
-### Server Default Gamemode
+## Server Default Gamemode
 - Returns the Server's default gamemode
 ```
 http://localhost:8080/api/v1/defaultgamemode
@@ -115,7 +115,7 @@ or
 ["SPECTATOR"]
 ```
 
-### Server Max Player Count
+## Server Max Player Count
 - Returns the Server's maximum player allowance
 ```
 http://localhost:8080/api/v1/maxplayercount
@@ -125,7 +125,7 @@ http://localhost:8080/api/v1/maxplayercount
 ["20"]
 ```
 
-### Server Current Player Names
+## Server Current Player Names
 - Returns the Server's currently online players
 ```
 http://localhost:8080/api/v1/playernames
@@ -135,13 +135,13 @@ http://localhost:8080/api/v1/playernames
 [
   {
     "ID": "c888eef5-edb7-4ceb-bbf3-987731de9747",
-    "NAME": "Jonas_Jones",
-    "LEGACY": false
+    "NAME": "Jonas_Jones"
   }
 ]
 ```
+NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always true and thus redundant)*
 
-### Server Ticks
+## Server Ticks
 - Returns the Server's tick count
 ```
 http://localhost:8080/api/v1/ticks
@@ -151,7 +151,7 @@ http://localhost:8080/api/v1/ticks
 ["20456"]
 ```
 
-### Server Ticktime
+## Server Ticktime
 - Returns the Server's time it takes to process a single tick in Milliseconds
 ```
 http://localhost:8080/api/v1/ticktime
@@ -161,7 +161,7 @@ http://localhost:8080/api/v1/ticktime
 ["0.1235235"]
 ```
 
-### Server Time-reference
+## Server Time-reference
 - Returns the Server's in-game time of the day of the overworld
 ```
 http://localhost:8080/api/v1/timereference
@@ -171,7 +171,7 @@ http://localhost:8080/api/v1/timereference
 ["20"]
 ```
 
-### Server Metadata
+## Server Metadata
 - Returns the Server's Metadata. This includes all the information that is also being sent to a Minecraft client when pinging the server.
 ```
 http://localhost:8080/api/v1/servermetadata
@@ -186,8 +186,7 @@ http://localhost:8080/api/v1/servermetadata
     "SAMPLE": [
       {
       "ID": "00000000-0000-0000-0000-000000000000",
-      "NAME": "Anonymous Player",
-      "LEGACY": false
+      "NAME": "Anonymous Player"
       }
     ]
   },
@@ -199,8 +198,9 @@ http://localhost:8080/api/v1/servermetadata
   "SECURE_CHAT_EINFORCED":true
 }
 ```
+NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always true and thus redundant)*
 
-### Server All-Info
+## Server All-Info
 - Returns the Server's entire data of the Simple API
 ```
 http://localhost:8080/api/v1/getall
@@ -221,8 +221,7 @@ http://localhost:8080/api/v1/getall
       "SAMPLE": [
         {
           "ID": "00000000-0000-0000-0000-000000000000",
-          "NAME": "Anonymous Player",
-          "LEGACY": false
+          "NAME": "Anonymous Player"
         }
       ]
     },
@@ -238,8 +237,9 @@ http://localhost:8080/api/v1/getall
   "TIME_REFERENCE": 29606414
 }
 ```
+NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always true and thus redundant)*
 
-### Server Favicon
+## Server Favicon
 - Returns the server icon image in form of a png
 ```
 http://localhost:8080/api/v1/favicon
@@ -250,7 +250,7 @@ http://localhost:8080/api/v1/favicon
 ## Errors
 When interacting with the API some errors can occur.
 
-### Bad Request
+## Bad Request
 - Occurs when a request doesn't exist
 ```
 http://localhost:8080/api/v1/getmotd
@@ -266,7 +266,7 @@ In this example the request is wrong. `getmotd` isn't a valid request.
 }
 ```
 
-### Internal Server Error
+## Internal Server Error
 - Occurs when something unexpected happens internally while handling the request. This most likely has nothing to do with you.
 
 One possible way of getting the error message is to send the request before the server has fully started, more precise while loading the world.

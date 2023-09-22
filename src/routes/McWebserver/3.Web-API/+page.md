@@ -139,7 +139,7 @@ http://localhost:8080/api/v1/playernames
   }
 ]
 ```
-NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always true and thus redundant)*
+NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always false and thus redundant)*
 
 ## Server Ticks
 - Returns the Server's tick count
@@ -198,7 +198,7 @@ http://localhost:8080/api/v1/servermetadata
   "SECURE_CHAT_EINFORCED":true
 }
 ```
-NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always true and thus redundant)*
+NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always false and thus redundant)*
 
 ## Server All-Info
 - Returns the Server's entire data of the Simple API
@@ -237,7 +237,7 @@ http://localhost:8080/api/v1/getall
   "TIME_REFERENCE": 29606414
 }
 ```
-NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always true and thus redundant)*
+NOTE: *v0.3.0 returns an additional property* `LEGACY` *for every player that states whether or not the account is a legacy account or not. Since mc 1.20.2 and the mod release 0.3.1 this was removed due to the end of the account migration period, where all legacy accounts were migrated to microsoft accounts. (This property is now always false and thus redundant)*
 
 ## Server Favicon
 - Returns the server icon image in form of a png

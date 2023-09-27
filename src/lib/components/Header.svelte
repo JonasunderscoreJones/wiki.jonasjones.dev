@@ -3,7 +3,7 @@
 	<div class="header-title">
 		<a href="/"
 			><img src="/favicon.png" alt="logo" width="50" height="50" />
-			<h1 style="">wiki.jonasjones.dev</h1></a
+			<h1 style="">Jonas_Jones Wiki</h1></a
 		>
 	</div>
 	<nav>

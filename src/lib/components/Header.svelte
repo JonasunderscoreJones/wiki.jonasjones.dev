@@ -19,7 +19,7 @@
 	header {
 		padding: 1rem;
 		margin: 2rem;
-		margin-top: 0;
+		margin-top: 2rem;
 		margin-bottom: 0;
 		background: rgb(0, 255, 0);
 		display: flex;
@@ -66,6 +66,11 @@
 @media screen and (max-width: 550px) {
 	header h1 {
 		font-size: 20px;
+	}
+
+	header {
+		margin: 0;
+		border-radius: 0;
 	}
 }
 </style>

@@ -27,7 +27,7 @@
 	footer {
 		padding: 1rem;
 		margin: 2rem;
-		margin-bottom: 0;
+		margin-bottom: 2rem;
 		margin-top: 0;
 		background: var(--container-background-color);
 		display: flex;
@@ -53,5 +53,12 @@
 		justify-content: center;
 		align-items: center;
 		font-size: 20px;
+	}
+
+	@media (max-width: 550px) {
+		footer {
+			margin: 0;
+			border-radius: 0;
+		}
 	}
 </style>

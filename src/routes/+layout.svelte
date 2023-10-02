@@ -5,7 +5,6 @@
 
 </script>
 
-<div style="height:2rem" />
 <Header />
 <div class="container">
     <div class="column"><Navbar /></div>
@@ -17,4 +16,3 @@
 </div>
 
 <Footer />
-<div style="height:2rem" />

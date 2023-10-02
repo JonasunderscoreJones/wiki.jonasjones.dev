@@ -61,4 +61,11 @@
 		float: left;
 		clear: both;
 	}
+
+
+@media screen and (max-width: 550px) {
+	header h1 {
+		font-size: 20px;
+	}
+}
 </style>

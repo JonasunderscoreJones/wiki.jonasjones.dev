@@ -9,7 +9,14 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="https://jonasjones.dev/"><img style="padding-top: 7px;" src="/homepage.png" height="30px" alt="Homepage"></a>
+				<a href="https://jonasjones.dev/"
+					><img
+						style="padding-top: 7px;"
+						src="/homepage.png"
+						height="30px"
+						alt="Homepage"
+					/></a
+				>
 			</li>
 		</ul>
 	</nav>
@@ -19,7 +26,7 @@
 	header {
 		padding: 1rem;
 		margin: 2rem;
-		margin-top: 0;
+		margin-top: 2rem;
 		margin-bottom: 0;
 		background: rgb(0, 255, 0);
 		display: flex;
@@ -60,5 +67,19 @@
 		align-items: center;
 		float: left;
 		clear: both;
+	}
+
+	@media screen and (max-width: 550px) {
+		header h1 {
+			font-size: 20px;
+			float:none;
+			padding-left: 40px;
+		}
+
+		header {
+			margin: 0;
+			border-radius: 0;
+			text-align: left;
+		}
 	}
 </style>

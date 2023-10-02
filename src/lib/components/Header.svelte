@@ -72,11 +72,14 @@
 	@media screen and (max-width: 550px) {
 		header h1 {
 			font-size: 20px;
+			float:none;
+			margin-left: 35px;
 		}
 
 		header {
 			margin: 0;
 			border-radius: 0;
+			text-align: left;
 		}
 	}
 </style>

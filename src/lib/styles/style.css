@@ -73,7 +73,7 @@ main {
 .navbar {
 	float: left;
 	padding: 2rem;
-	min-width: 300px;
+	min-width: 200px;
 	margin-right: 2rem;
 	font-size: 1.2rem;
 }
@@ -124,4 +124,21 @@ details {
 
 details a {
 	padding-left: 0.5rem;
+}
+
+.content {
+	margin-left: 0;
+	overflow: scroll;
+	white-space: initial;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.content {
+		margin-left: 32px;
+		margin-top: 0;
+	}
 }

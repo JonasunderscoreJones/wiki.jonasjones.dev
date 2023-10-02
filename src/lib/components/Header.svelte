@@ -9,7 +9,14 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="https://jonasjones.dev/"><img style="padding-top: 7px;" src="/homepage.png" height="30px" alt="Homepage"></a>
+				<a href="https://jonasjones.dev/"
+					><img
+						style="padding-top: 7px;"
+						src="/homepage.png"
+						height="30px"
+						alt="Homepage"
+					/></a
+				>
 			</li>
 		</ul>
 	</nav>
@@ -62,15 +69,14 @@
 		clear: both;
 	}
 
+	@media screen and (max-width: 550px) {
+		header h1 {
+			font-size: 20px;
+		}
 
-@media screen and (max-width: 550px) {
-	header h1 {
-		font-size: 20px;
+		header {
+			margin: 0;
+			border-radius: 0;
+		}
 	}
-
-	header {
-		margin: 0;
-		border-radius: 0;
-	}
-}
 </style>

@@ -73,7 +73,7 @@
 		header h1 {
 			font-size: 20px;
 			float:none;
-			margin-left: 35px;
+			padding-left: 40px;
 		}
 
 		header {

@@ -1,6 +1,5 @@
 <script>
     // @ts-nocheck
-
     let data = import.meta.glob("/src/routes/**/+page.md");
     let paths = data;
 
@@ -36,7 +35,8 @@
         return nestedList;
     }
 
-    const nestedFolders = buildHierarchy(paths);
+    let nestedFolders = buildHierarchy(paths);
+    console.log(nestedFolders);
 
     function createHtmlList(obj, parentPath = "", depth = 0) {
         let html = "";
@@ -68,6 +68,31 @@
 
     //const renderedList = `<ul>${renderNestedList(nestedFolders)}</ul>`;
     let renderedList = createHtmlList(nestedFolders);
+
+    function filterObject(obj, filterString) {
+        if (filterString === '') {
+            return obj; // If filterString is empty, return the original object
+        }
+
+        for (const key in obj) {
+            if (typeof obj[key] === 'object' && Object.keys(obj[key]).length > 0) {
+                obj[key] = filterObject(obj[key], filterString);
+                if (Object.keys(obj[key]).length === 0) {
+                    delete obj[key]; // Remove the branch if it becomes empty after filtering
+                }
+            } else if (!key.includes(filterString)) {
+                delete obj[key];
+            }
+        }
+        return obj;
+    }
+
+    export let searchterm;
+    $: {
+        nestedFolders = buildHierarchy(paths);
+        nestedFolders = filterObject(nestedFolders, searchterm);
+        renderedList = createHtmlList(nestedFolders);
+    }
 </script>
 
 {@html renderedList}

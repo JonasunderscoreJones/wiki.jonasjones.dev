@@ -50,7 +50,7 @@
             ) {
                 // If the value is an object and not empty, create a nested div
                 html += `
-          	<li><h${depth + 3}><a href="/${currentPath}">${key}</a></h${
+          	<li><h${depth + 3} style='margin:0'><a href="/${currentPath}">${key}</a></h${
                     depth + 3
                 }></li>
             <ul>

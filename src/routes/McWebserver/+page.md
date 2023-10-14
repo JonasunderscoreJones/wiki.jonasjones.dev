@@ -20,7 +20,7 @@ This mod runs a simple HTTP server alongside the minecraft server.
 The mod allows You to host websites and share files and Server Backups directly from your server without the need of a seperate server setup. Adjust the port and design your website.
 
 ### API
-It also has a powerful API allowing you to fetch server info about players and the server itself. More info on the [API's Wiki page](https://github.com/J-onasJones/McWebserver/wiki/3.-Web%E2%80%90API)
+It also has a powerful API allowing you to fetch server info about players and the server itself. More info on the [API's Wiki page](/McWebserver/Web-API)
 
 The http server has up to no performance impact on the server
 
@@ -35,4 +35,4 @@ Do **only** put files into your webservers root directory that you want to be ac
 <img src="https://cdn.jonasjones.dev/mod-badges/available-modrinth.png" width="250px">
 
 ### Setup
-For Setup and further Info, please refer to the [setup page](http://localhost:5173/McWebserver/1.Setup)
+For Setup and further Info, please refer to the [setup page](/McWebserver/Setup)

@@ -8,7 +8,7 @@ Get the API version
 /v1/version
 ```
 
-### Response
+### Example Response
 *application/json*
 ```json
 ["0.0.1+alpha-build01"]

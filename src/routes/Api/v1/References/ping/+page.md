@@ -8,7 +8,7 @@ Test the API connection.
 /v1/ping
 ```
 
-### Response
+### Example Response
 *text/plain*
 ```
 pong

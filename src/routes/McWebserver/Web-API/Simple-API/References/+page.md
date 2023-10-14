@@ -1,0 +1,18 @@
+# References
+---
+- [Current-Player-Names](/McWebserver/Web-API/Simple-API/References/Current-Player-Names)
+- [Default-Gamemode](/McWebserver/Web-API/Simple-API/References/Default-Gamemode)
+- [Favicon](/McWebserver/Web-API/Simple-API/References/Favicon)
+- [Get-All](/McWebserver/Web-API/Simple-API/References/Get-All)
+- [IP-Address](/McWebserver/Web-API/Simple-API/References/IP-Address)
+- [Loader-Version](/McWebserver/Web-API/Simple-API/References/Loader-Version)
+- [MC-Version](/McWebserver/Web-API/Simple-API/References/MC-Version)
+- [MOTD](/McWebserver/Web-API/Simple-API/References/MOTD)
+- [Max-Player-Count](/McWebserver/Web-API/Simple-API/References/Max-Player-Count)
+- [Metadata](/McWebserver/Web-API/Simple-API/References/Metadata)
+- [Name](/McWebserver/Web-API/Simple-API/References/Name)
+- [Player-Count](/McWebserver/Web-API/Simple-API/References/Player-Count)
+- [Port](/McWebserver/Web-API/Simple-API/References/Port)
+- [Ticks](/McWebserver/Web-API/Simple-API/References/Ticks)
+- [Ticktime](/McWebserver/Web-API/Simple-API/References/Ticktime)
+- [Time-Reference](/McWebserver/Web-API/Simple-API/References/Time-Reference)

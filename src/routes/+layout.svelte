@@ -6,8 +6,8 @@
 
 <Header />
 <div class="container">
-    <div class="column"><Navbar /></div>
-    <div class="column content flex_grow">
+    <div class="column box-shadow"><Navbar /></div>
+    <div class="column box-shadow content flex_grow">
         <main>
             <slot />
         </main>

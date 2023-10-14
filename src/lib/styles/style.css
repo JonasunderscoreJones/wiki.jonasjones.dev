@@ -15,6 +15,7 @@
 	--text-color: #fff;
 	--link-text-color: #afb9c4;
 	--collapsed-background-color: #414753;
+	--box-shadow-color: #111316;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,6 +24,8 @@
 		--container-background-color: #d9d6d0;
 		--text-color: #000;
 		--link-text-color: #50463b;
+		--collapsed-background-color: #c4c4c4;
+		--box-shadow-color: #aaa;
 	}
 }
 
@@ -85,6 +88,10 @@ ul {
 
 .container {
 	display: flex;
+}
+
+.box-shadow {
+	box-shadow: 2px 2px var(--box-shadow-color);
 }
 
 .row:after {

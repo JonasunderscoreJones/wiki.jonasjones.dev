@@ -33,6 +33,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		border-radius: 0.5rem;
+		box-shadow: 2px 2px rgb(0, 180, 0);
 	}
 
 	ul {

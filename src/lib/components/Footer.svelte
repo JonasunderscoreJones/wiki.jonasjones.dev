@@ -3,7 +3,7 @@
 </script>
 
 <!-- Footer.svelte -->
-<footer>
+<footer class="box-shadow">
 	<div class="footer-flex">
 		<a href="/">Home</a>
 		<nav>

@@ -50,9 +50,7 @@
             ) {
                 // If the value is an object and not empty, create a nested div
                 html += `
-          	<li><h${depth + 3} style='margin:0'><a href="/${currentPath}">${key}</a></h${
-                    depth + 3
-                }></li>
+          	<li><h3 style='margin:0;font-size:${(1/(depth)+10)*2}px'><a href="/${currentPath}">${key}</a></h3></li>
             <ul>
               ${createHtmlList(obj[key], currentPath, depth + 1)}
             </ul>
@@ -70,12 +68,15 @@
     let renderedList = createHtmlList(nestedFolders);
 
     function filterObject(obj, filterString) {
-        if (filterString === '') {
+        if (filterString === "") {
             return obj; // If filterString is empty, return the original object
         }
 
         for (const key in obj) {
-            if (typeof obj[key] === 'object' && Object.keys(obj[key]).length > 0) {
+            if (
+                typeof obj[key] === "object" &&
+                Object.keys(obj[key]).length > 0
+            ) {
                 obj[key] = filterObject(obj[key], filterString);
                 if (Object.keys(obj[key]).length === 0) {
                     delete obj[key]; // Remove the branch if it becomes empty after filtering

@@ -94,6 +94,10 @@ ul {
 	box-shadow: 2px 2px var(--box-shadow-color);
 }
 
+.box-shadow-inverted {
+	box-shadow: inset 2px 2px var(--box-shadow-color);
+}
+
 .row:after {
 	content: "";
 	display: table;

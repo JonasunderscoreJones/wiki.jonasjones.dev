@@ -3,37 +3,42 @@
 </script>
 
 <!-- Footer.svelte -->
-<footer>
-	<a href="/">Home</a>
+<footer class="box-shadow">
+	<div class="footer-flex">
+		<a href="/">Home</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="https://jonasjones.dev/">Homepage</a>
+				</li>
+				<li>
+					<a href="/about">About</a>
+				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 	<div class="footer">
 		<p>Website by Jonas_Jones 2021 - 2024</p>
 	</div>
-	<nav>
-		<ul>
-			<li>
-				<a href="https://jonasjones.dev/">Homepage</a>
-			</li>
-			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/contact">Contact</a>
-			</li>
-		</ul>
-	</nav>
 </footer>
 
 <style>
 	footer {
 		padding: 1rem;
 		margin: 2rem;
-		margin-bottom: 0;
+		margin-bottom: 2rem;
 		margin-top: 0;
 		background: var(--container-background-color);
+		border-radius: 0.5rem;
+	}
+
+	.footer-flex {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		border-radius: 0.5rem;
 	}
 
 	ul {
@@ -49,9 +54,14 @@
 	}
 
 	.footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		font-size: 20px;
+		text-align: center;
+	}
+
+	@media (max-width: 550px) {
+		footer {
+			margin: 0;
+			border-radius: 0;
+		}
 	}
 </style>

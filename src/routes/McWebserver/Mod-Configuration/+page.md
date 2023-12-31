@@ -34,5 +34,5 @@ The config file consists of the following entries:
 - accepts: any path with `[filename].html` at the end
 
 ### logger.verbose
-- enables/disables the verbose logger (more info at [5. Loggers](/McWebserver/5.Loggers))
+- enables/disables the verbose logger (more info at [Loggers](/McWebserver/Loggers))
 - accepts: `true`/`false`

@@ -3,13 +3,20 @@
 	<div class="header-title">
 		<a href="/"
 			><img src="/favicon.png" alt="logo" width="50" height="50" />
-			<h1 style="">wiki.jonasjones.dev</h1></a
+			<h1 style="">Jonas_Jones Wiki</h1></a
 		>
 	</div>
 	<nav>
 		<ul>
 			<li>
-				<a href="https://jonasjones.dev/"><img style="padding-top: 7px;" src="/homepage.png" height="30px" alt="Homepage"></a>
+				<a href="https://jonasjones.dev/"
+					><img
+						style="padding-top: 7px;"
+						src="/homepage.png"
+						height="30px"
+						alt="Homepage"
+					/></a
+				>
 			</li>
 		</ul>
 	</nav>
@@ -19,13 +26,14 @@
 	header {
 		padding: 1rem;
 		margin: 2rem;
-		margin-top: 0;
+		margin-top: 2rem;
 		margin-bottom: 0;
 		background: rgb(0, 255, 0);
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		border-radius: 0.5rem;
+		box-shadow: 2px 2px rgb(0, 180, 0);
 	}
 
 	ul {
@@ -60,5 +68,19 @@
 		align-items: center;
 		float: left;
 		clear: both;
+	}
+
+	@media screen and (max-width: 550px) {
+		header h1 {
+			font-size: 20px;
+			float:none;
+			padding-left: 40px;
+		}
+
+		header {
+			margin: 0;
+			border-radius: 0;
+			text-align: left;
+		}
 	}
 </style>

@@ -15,6 +15,7 @@
 	--text-color: #fff;
 	--link-text-color: #afb9c4;
 	--collapsed-background-color: #414753;
+	--box-shadow-color: #111316;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,6 +24,8 @@
 		--container-background-color: #d9d6d0;
 		--text-color: #000;
 		--link-text-color: #50463b;
+		--collapsed-background-color: #c4c4c4;
+		--box-shadow-color: #aaa;
 	}
 }
 
@@ -73,7 +76,7 @@ main {
 .navbar {
 	float: left;
 	padding: 2rem;
-	min-width: 300px;
+	min-width: 200px;
 	margin-right: 2rem;
 	font-size: 1.2rem;
 }
@@ -85,6 +88,14 @@ ul {
 
 .container {
 	display: flex;
+}
+
+.box-shadow {
+	box-shadow: 2px 2px var(--box-shadow-color);
+}
+
+.box-shadow-inverted {
+	box-shadow: inset 2px 2px var(--box-shadow-color);
 }
 
 .row:after {
@@ -124,4 +135,45 @@ details {
 
 details a {
 	padding-left: 0.5rem;
+}
+
+.content {
+	margin-left: 0;
+	overflow: scroll;
+	white-space: initial;
+}
+
+input {
+	background-color: var(--container-background-color);
+	border: 1px solid var(--container-background-color);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	color: var(--text-color);
+	border: 3px solid var(--background-color);
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.content {
+		margin-left: 32px;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.column {
+		margin: 0;
+		margin-bottom: 1rem;
+		border-radius: 0;
+	}
+
+	main {
+		margin: 0;
+		padding: 15px;
+		margin-bottom: 1rem;
+		border-radius: 0;
+	}
 }

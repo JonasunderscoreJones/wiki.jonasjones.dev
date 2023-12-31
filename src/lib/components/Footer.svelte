@@ -6,7 +6,7 @@
 <footer>
 	<a href="/">Home</a>
 	<div class="footer">
-		<p>Website by Jonas_Jones 2021 - 2023</p>
+		<p>Website by Jonas_Jones 2021 - 2024</p>
 	</div>
 	<nav>
 		<ul>

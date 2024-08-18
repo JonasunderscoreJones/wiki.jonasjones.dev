@@ -1,5 +1,21 @@
 <script>
 	import NavbarList from "./NavbarList.svelte";
+	import { onMount } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
+	import { recordRequest } from './analytics';
+
+	// Function to handle navigation events
+	function handleNavigation() {
+		recordRequest();
+	}
+
+	// Call the analytics function on initial page load and after each navigation
+	onMount(() => {
+		handleNavigation();
+		afterNavigate(() => {
+		handleNavigation();
+		});
+	});
 
 	let searchterm = "";
 

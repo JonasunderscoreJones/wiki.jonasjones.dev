@@ -1,4 +1,7 @@
 <!-- Header.svelte -->
+<div class="deprecated">
+	<p>The Wiki is deprecated and has been replaced by the <a href="https://docs.jonasjones.dev/">Jones_Jones Docs</a></p>
+</div>
 <header>
 	<div class="header-title">
 		<a href="/"
@@ -82,5 +85,31 @@
 			border-radius: 0;
 			text-align: left;
 		}
+	}
+
+	.deprecated {
+		background: #490000;
+		color: white;
+		text-align: center;
+		padding: 1rem;
+		margin: 2rem;
+		margin-bottom: 0;
+		border-radius: 0.5rem;
+		box-shadow: 2px 2px rgb(88, 0, 0);
+	}
+
+	.deprecated p {
+		font-size: 1.5rem;
+		margin: 0;
+	}
+
+	.deprecated a {
+		color: lightblue;
+		font-size: 1.5rem;
+		text-decoration: underline;
+	}
+
+	.deprecated a:hover {
+		color: white;
 	}
 </style>
